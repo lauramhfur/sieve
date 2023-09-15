@@ -21,7 +21,7 @@ def sieve(n: int) -> list[int]:
     primes = [p for p in candidates if all(p % j != 0 for j in candidates if p != j)]
 
     # Loop method  
-    for p in candidates:                 # Crpteria 3: You are always assuming that the smallest number, 2, is a prime number.
+    for p in candidates:                 # Criteria 3: You are always assuming that the smallest number, 2, is a prime number.
         for j in candidates:
             if p != j:
                 if j % p == 0:           # Criteria 2: Testing if a number, "j" can be divided by a prime number, so that the remainder is 0.
